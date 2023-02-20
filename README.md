@@ -19,7 +19,7 @@ The action space is discrete.
 Every 'delta_time' seconds, each traffic signal agent can choose the next green phase configuration.
 
     
-Important: every time a phase change occurs, the next phase is preeceded by a 3s yellow phase lasting ```yellow_time``` seconds and 2s all red time implemented.
+Important: every time a phase change occurs, the next phase is preeceded by a 3s yellow phase lasting ```yellow_time``` seconds and 2s ```all_red_time``` implemented.
 
 ### Rewards
 For double deep q model, the default reward function is the discharge rate, which is, the number of vehicles that could be discharged per second between two consecutive actions.
