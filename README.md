@@ -77,7 +77,6 @@ for agent in env.agent_iter():
 WARNING: Gym 0.26 had many breaking changes, stable-baselines3 and RLlib still do not support it, but will be updated soon. See [Stable Baselines 3 PR](https://github.com/DLR-RM/stable-baselines3/pull/780) and [RLib PR](https://github.com/ray-project/ray/pull/28369).
 Hence, only the tabular Q-learning experiment is running without erros for now.
 
-Check [experiments](https://github.com/LucasAlegre/sumo-rl/tree/master/experiments) for examples on how to instantiate an environment and train your RL agent.
 
 ### [Double Q-learning](https://github.com/linlyu97/Reinforcement-Learning-Approach-for-Intelligent-Traffic-Light-Control/blob/main/experiments/double_ql_single-intersection.py) in a one-way single intersection:
 ```bash
