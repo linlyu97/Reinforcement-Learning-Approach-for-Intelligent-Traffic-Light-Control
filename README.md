@@ -24,6 +24,8 @@ Important: every time a phase change occurs, the next phase is preeceded by a 3s
 ### Rewards
 For double deep q model, the default reward function is the discharge rate, which is, the number of vehicles that could be discharged per second between two consecutive actions.
 
+For double q learning model, the reward is "lane_based_delay" between two consecutive actions.
+
 You can choose a different reward function (see the ones implemented in [TrafficSignal](https://github.com/linlyu97/Reinforcement-Learning-Approach-for-Intelligent-Traffic-Light-Control/blob/main/sumo_rl/environment/traffic_signal.py)) 
 
 It is also possible to implement your own reward function:
@@ -77,17 +79,13 @@ Hence, only the tabular Q-learning experiment is running without erros for now.
 
 Check [experiments](https://github.com/LucasAlegre/sumo-rl/tree/master/experiments) for examples on how to instantiate an environment and train your RL agent.
 
-### [Q-learning](https://github.com/LucasAlegre/sumo-rl/blob/master/agents/ql_agent.py) in a one-way single intersection:
+### [Double Q-learning](https://github.com/linlyu97/Reinforcement-Learning-Approach-for-Intelligent-Traffic-Light-Control/blob/main/experiments/double_ql_single-intersection.py) in a one-way single intersection:
 ```bash
-python experiments/ql_single-intersection.py 
+python experiments/double_ql_single-intersection.py 
 ```
 
-### [RLlib A3C](https://github.com/ray-project/ray/tree/master/python/ray/rllib/agents/a3c) multiagent in a 4x4 grid:
+### [Double Deep Q-network](https://github.com/linlyu97/Reinforcement-Learning-Approach-for-Intelligent-Traffic-Light-Control/blob/main/experiments/deep_q_learning.py) in a one-way single intersection:
 ```bash
-python experiments/a3c_4x4grid.py
+python experiments/deep_q_learning.py 
 ```
 
-### [stable-baselines3 DQN](https://github.com/DLR-RM/stable-baselines3/blob/master/stable_baselines3/dqn/dqn.py) in a 2-way single intersection:
-```bash
-python experiments/dqn_2way-single-intersection.py
-```
