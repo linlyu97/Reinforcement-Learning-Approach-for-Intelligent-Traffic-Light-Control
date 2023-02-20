@@ -1,0 +1,23 @@
+<routes>
+        <vType id="typeWE" accel="2.6" decel="4.5" sigma="0" length="5" minGap="2.5" maxSpeed="15.65" guiShape="passenger"/>
+        <vType id="typeEW" accel="2.6" decel="4.5" sigma="0" length="5" minGap="2.5" maxSpeed="15.65" guiShape="passenger"/>
+        <vType id="typeNS" accel="2.6" decel="4.5" sigma="0" length="5" minGap="2.5" maxSpeed="15.65"         guiShape="passenger"/>
+        <vType id="typeSN" accel="2.6" decel="4.5" sigma="0" length="5" minGap="2.5" maxSpeed="15.65"         guiShape="passenger"/>
+        <route id="eastbound" edges="1i 2i" />
+        <route id="westbound" edges="-2i -1i" />
+        <route id="northbound" edges="-3i 4i" />
+        <route id="southbound" edges="-4i 3i" />
+        
+     <flow id="northbound_0" route="northbound" begin="0" end="600" probability="0.05555555555555555" type="typeWE"                 departSpeed="max" departPos="base" departLane="best"/>
+     <flow id="southbound_0" route="southbound" begin="0" end="600" probability="0.05555555555555555" type="typeWE"                 departSpeed="max" departPos="base" departLane="best"/>
+    <flow id="westbound_0" route="westbound" begin="0" end="600" probability="0.1388888888888889" type="typeWE"                 departSpeed="max" departPos="base" departLane="best"/>
+    <flow id="eastbound_0" route="eastbound" begin="0" end="600" probability="0.1388888888888889" type="typeWE"                 departSpeed="max" departPos="base" departLane="best"/>
+     <flow id="northbound_1" route="northbound" begin="600" end="1200" probability="0.1111111111111111" type="typeWE"                 departSpeed="max" departPos="base" departLane="best"/>
+     <flow id="southbound_1" route="southbound" begin="600" end="1200" probability="0.1111111111111111" type="typeWE"                 departSpeed="max" departPos="base" departLane="best"/>
+    <flow id="westbound_1" route="westbound" begin="600" end="1200" probability="0.25" type="typeWE"                 departSpeed="max" departPos="base" departLane="best"/>
+    <flow id="eastbound_1" route="eastbound" begin="600" end="1200" probability="0.25" type="typeWE"                 departSpeed="max" departPos="base" departLane="best"/>
+     <flow id="northbound_2" route="northbound" begin="1200" end="1800" probability="0.08333333333333333" type="typeWE"                 departSpeed="max" departPos="base" departLane="best"/>
+     <flow id="southbound_2" route="southbound" begin="1200" end="1800" probability="0.08333333333333333" type="typeWE"                 departSpeed="max" departPos="base" departLane="best"/>
+    <flow id="westbound_2" route="westbound" begin="1200" end="1800" probability="0.19444444444444445" type="typeWE"                 departSpeed="max" departPos="base" departLane="best"/>
+    <flow id="eastbound_2" route="eastbound" begin="1200" end="1800" probability="0.19444444444444445" type="typeWE"                 departSpeed="max" departPos="base" departLane="best"/>
+</routes>

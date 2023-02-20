@@ -1,0 +1,7 @@
+<additional>
+  <inductionLoop id="Loop1" lane="1i_0" pos="500" freq="900" file="out.xml"/>
+  <inductionLoop id="Loop2" lane="-2i_0" pos="500" freq="900" file="out.xml"/>
+  <inductionLoop id="Loop3" lane="-4i_0" pos="500" freq="900" file="out.xml"/>
+  <inductionLoop id="Loop4" lane="-3i_0" pos="500" freq="900" file="out.xml"/>
+</additional>
+
